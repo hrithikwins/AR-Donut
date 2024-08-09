@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import HeadingText from "../Text/HeadingText";
 const splashScreenVariants = {
   visible: { opacity: 1, scale: 1 },
   hidden: { opacity: 0, scale: 1 },
@@ -34,7 +33,7 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
           animate={{ scale: 1.2 }}
           transition={{ yoyo: Infinity, duration: 0.5 }}
         >
-          <HeadingText className="text-[#682715]">Donut Factory</HeadingText>
+          Donut Factory
         </motion.h1>
         <div></div>
       </div>
