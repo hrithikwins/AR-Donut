@@ -22,12 +22,18 @@ const ShareSvg = () => {
 };
 
 const shareContent = async () => {
+  const imageFile = await fetch("/og-image.jpg").then((res) =>
+    res.blob()
+  ); // Replace with your image URL
+  const file = new File([imageFile], "image.jpg", { type: "image/jpeg" }); // Create a File object
+
   if (navigator.share) {
     try {
       await navigator.share({
-        title: "Check this out!",
-        text: "I found this amazing content!",
+        title: "Donut Factory!",
+        text: "Hey I found donuts for you!",
         url: window.location.href, // Share the current page URL
+        files: [file], // Include the image file
       });
       console.log("Content shared successfully!");
     } catch (error) {
