@@ -23,6 +23,7 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
           className="w-full absolute"
           src={"/chocolate-drop.svg"}
           alt=""
+          priority
           width={400}
           height={400}
         />

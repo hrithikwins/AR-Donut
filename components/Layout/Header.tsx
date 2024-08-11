@@ -57,6 +57,7 @@ const Header = () => {
 
       <Image
         className="w-full"
+        priority
         src={"/chocolate-drop.svg"}
         alt=""
         width={400}
