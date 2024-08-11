@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import SplashScreen from "@/components/Home/SplashScreen";
 import Model from "@/components/Model/Model";
 import Donuts from "@/public/names.json";
-import ModelViewer from "@/components/Model/Mode-viewer";
 import { registerServiceWorker } from "@/utils/swRegister";
 
 const VegSVG = () => {
@@ -104,14 +103,7 @@ export default function Home() {
                 <DonutCard item={item} />
               </motion.div>
             ))}
-            {/* <ModelViewer
-              src="/glbs/strawberry/strawberry chocolate vermicheli.glb"
-              alt="A 3D model"
-              autoRotate={true}
-              cameraControls={true}
-              ar={true}
-              style={{ width: "100%", height: "100%" }}
-            /> */}
+            
           </motion.div>
         </Layout>
       )}
