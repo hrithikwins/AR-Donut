@@ -2,10 +2,9 @@
 import React, { useState, useEffect } from "react";
 import ARButton from "@/components/Buttons/ARButton";
 import Layout from "@/components/Layout/Layout";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import SplashScreen from "@/components/Home/SplashScreen";
-
+import Model from "@/components/Model/Model";
 const VegSVG = () => {
   return (
     <svg
@@ -26,13 +25,7 @@ const DonutCard = ({item}:any) => {
       <div className="absolute mx-2 my-2 ">
         <VegSVG />
       </div>
-      <Image
-        className="w-full"
-        src={item.image}
-        alt=" "
-        width={300}
-        height={300}
-      />
+      <Model url={item.image} />
       <div className="pt-2 pb-3 font-bold">{item.name}</div>
       <ARButton />
       <hr className="w-full  mt-4 text-[#B87764] bg-[#B87764]  border-[#B87764]  " />
@@ -57,24 +50,36 @@ export default function Home() {
 
   const Donuts = [
     {
-      image: "/Donuts/product1 2.svg",
-      name: "Soupless Dark",
+      image: "/glbs/coffee/coffee chocolate vermicheli.glb",
+      name: "Soupless Coffee Chocolate Vermicheli",
     },
     {
-      image: "/Donuts/product1 2.svg",
-      name: "Soupless Dark",
+      image: "/glbs/coffee/coffee dark curls.glb",
+      name: "Soupless Coffee Dark Curls",
     },
     {
-      image: "/Donuts/product1 2.svg",
-      name: "Soupless Dark",
+      image: "/glbs/coffee/coffee rad and white.glb",
+      name: "Soupless Coffee Red And White",
     },
     {
-      image: "/Donuts/product1 2.svg",
-      name: "Soupless Dark",
+      image: "/glbs/coffee/coffee rainbow vermicheli.glb",
+      name: "Soupless Coffee Rainbow Vermicheli",
     },
     {
-      image: "/Donuts/product1 2.svg",
-      name: "Soupless Dark",
+      image: "/glbs/coffee/coffee strawberry curls.glb",
+      name: "Soupless Coffee Strawberry Curls",
+    },
+    {
+      image: "/glbs/coffee/coffee two in one curls.glb",
+      name: "Soupless Coffee Two In One Curls",
+    },
+    {
+      image: "/glbs/coffee/coffee white vermicheli.glb",
+      name: "Soupless Coffee White Vermicheli",
+    },
+    {
+      image: "/glbs/dark/dark chocolate curls.glb",
+      name: "Soupless Coffee White Vermicheli",
     },
   ];
 

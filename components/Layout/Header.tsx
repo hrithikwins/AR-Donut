@@ -20,7 +20,6 @@ const ShareSvg = () => {
     </svg>
   );
 };
-
 const shareContent = async () => {
   const imageFile = await fetch("/og-image.jpg").then((res) =>
     res.blob()
