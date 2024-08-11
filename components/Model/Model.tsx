@@ -51,6 +51,8 @@ const Model = ({ url }: any) => {
       style={{
         overflow: "hidden",
         padding: "16px",
+        border: "1px solid #ccc",
+        borderRadius: "8px",
       }}
       className="w-full h-[200px]"
     >
