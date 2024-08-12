@@ -55,7 +55,6 @@ const DonutCard = React.memo(({ item }: any) => {
       <div className="absolute mx-2 my-2 ">
         <VegSVG />
       </div>
-      {/* {isVisible && <Model url={item.image} />} */}
       <ModelViewer
         src={item.image}
         alt={item.name}
@@ -64,8 +63,6 @@ const DonutCard = React.memo(({ item }: any) => {
           width: "100%",
         }}
       />
-      <div className="pt-2 pb-3 font-bold">{item.name}</div>
-      <ARButton name={item.name} />
       <hr className="w-full mt-4 text-[#B87764] bg-[#B87764] border-[#B87764]" />
     </div>
   );
