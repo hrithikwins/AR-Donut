@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const ARSvg = () => {
@@ -49,9 +48,12 @@ interface ARButtonProps {
 
 const ARButton: React.FC<ARButtonProps> = ({ name }) => {
   return (
-    <Link href={`/${name}`} className="bg-[#682715] border-[#B87764] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold">
+    <button
+      id="ar-button"
+      className="bg-[#682715] border-[#B87764] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
+    >
       VIEW IN AR <ARSvg />
-    </Link>
+    </button>
   );
 };
 

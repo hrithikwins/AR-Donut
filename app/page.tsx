@@ -59,6 +59,8 @@ const DonutCard = React.memo(({ item }: any) => {
       <ModelViewer
         src={item.image}
         alt={item.name}
+        ar={true}
+        ar-button={ARButton}
         style={{
           overflow: "hidden",
           width: "100%",
