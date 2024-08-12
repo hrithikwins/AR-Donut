@@ -25,14 +25,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
         type="module"
         src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
       ></Script>
-      <div
-        style={{
-          overflow: "hidden",
-          padding: "16px",
-          border: "1px solid #ccc",
-          borderRadius: "8px",
-        }}
-      >
+      <div>
         <model-viewer
           ar
           camera-controls
@@ -40,17 +33,22 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
           auto-rotate
           src={src}
           alt={alt}
-          style={style}
-          className="w-full m-auto"
-        ></model-viewer>
+          style={{
+            overflow: "hidden",
+            width: "100%",
+            height: "320px",  
+          }}
+          className="w-full translate-y-[-100px] scale-75 m-auto"
+        >
+          <div className="pt-2 pb-3 mt-[240px] block font-bold">{alt}</div>
+          <button
+            className="bg-[#682715]  mt-[280px]  border-[#B87764] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
+            slot="ar-button"
+          >
+            VIEW IN AR <ARSvg />
+          </button>
+        </model-viewer>
       </div>
-      <div className="pt-2 pb-3 font-bold">{alt}</div>
-      <button
-        className="bg-[#682715] border-[#B87764] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
-        slot="ar-button"
-      >
-        VIEW IN AR <ARSvg/>
-      </button>
     </div>
   );
 };

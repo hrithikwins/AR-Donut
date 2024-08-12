@@ -55,14 +55,9 @@ const DonutCard = React.memo(({ item }: any) => {
       <div className="absolute mx-2 my-2 ">
         <VegSVG />
       </div>
-      <ModelViewer
-        src={item.image}
-        alt={item.name}
-        style={{
-          overflow: "hidden",
-          width: "100%",
-        }}
-      />
+      <div className="h-[320px]">
+        <ModelViewer src={item.image} alt={item.name} />
+      </div>
       <hr className="w-full mt-4 text-[#B87764] bg-[#B87764] border-[#B87764]" />
     </div>
   );
@@ -109,7 +104,6 @@ export default function Home() {
                 <DonutCard item={item} />
               </motion.div>
             ))}
-
           </motion.div>
         </Layout>
       )}
