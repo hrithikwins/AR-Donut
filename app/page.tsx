@@ -4,9 +4,10 @@ import ARButton from "@/components/Buttons/ARButton";
 import Layout from "@/components/Layout/Layout";
 import { motion } from "framer-motion";
 import SplashScreen from "@/components/Home/SplashScreen";
-import Model from "@/components/Model/Model";
+// import Model from "@/components/Model/Model";
 import Donuts from "@/public/names.json";
 import { registerServiceWorker } from "@/utils/swRegister";
+import ModelViewer from "@/components/Model/Model-viewer";
 
 const VegSVG = () => {
   return (
@@ -54,9 +55,17 @@ const DonutCard = React.memo(({ item }: any) => {
       <div className="absolute mx-2 my-2 ">
         <VegSVG />
       </div>
-      {isVisible && <Model url={item.image} />}
+      {/* {isVisible && <Model url={item.image} />} */}
+      <ModelViewer
+        src={item.image}
+        alt={item.name}
+        style={{
+          overflow: "hidden",
+          width: "100%",
+        }}
+      />
       <div className="pt-2 pb-3 font-bold">{item.name}</div>
-      <ARButton />
+      <ARButton name={item.name} />
       <hr className="w-full mt-4 text-[#B87764] bg-[#B87764] border-[#B87764]" />
     </div>
   );
@@ -103,7 +112,7 @@ export default function Home() {
                 <DonutCard item={item} />
               </motion.div>
             ))}
-            
+
           </motion.div>
         </Layout>
       )}
