@@ -29,12 +29,12 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
         />
         <div></div>
         <motion.h1
-          className="text-[#682715] text-4xl font-bold"
+          className="text-[#682715] text-center text-4xl font-bold"
           initial={{ scale: 1 }}
           animate={{ scale: 0.5 }}
           transition={{ yoyo: Infinity, duration: 2, delay: 0.5 }}
         >
-          Donut Factory
+          Master Baker <br /> Studio
         </motion.h1>
         <div></div>
       </div>

@@ -21,15 +21,13 @@ const ShareSvg = () => {
   );
 };
 const shareContent = async () => {
-  const imageFile = await fetch("/og-image.jpg").then((res) =>
-    res.blob()
-  ); // Replace with your image URL
+  const imageFile = await fetch("/og-image.jpg").then((res) => res.blob()); // Replace with your image URL
   const file = new File([imageFile], "image.jpg", { type: "image/jpeg" }); // Create a File object
 
   if (navigator.share) {
     try {
       await navigator.share({
-        title: "Donut Factory!",
+        title: "Master Baker Studio!",
         text: "Hey I found donuts for you!",
         url: window.location.href, // Share the current page URL
         files: [file], // Include the image file
@@ -45,8 +43,8 @@ const shareContent = async () => {
 const Header = () => {
   return (
     <div className="bg-[#FFD9CE]">
-      <div className="flex  absolute w-full px-4 justify-between items-center">
-        <HeadingText>Donut Factory</HeadingText>
+      <div className="flex  absolute w-full px-3 py-1 justify-between items-center">
+        <Image src={"/master-baker.svg"} width={150} height={200} alt="" />
         <button
           onClick={shareContent}
           className="bg-[#FFDE11]  cursor-pointer  rounded-full p-2"

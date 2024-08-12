@@ -5,19 +5,19 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Donut Factory",
+  title: "Master Baker Studio",
   description: "Experience the taste from your eyes",
   openGraph: {
-    title: "Donut Factory",
+    title: "Master Baker Studio",
     description: "Experience the taste from your eyes",
     url: "https://ar-donut.vercel.app/",
-    siteName: "Donut Factory",
+    siteName: "Master Baker Studio",
     images: [
       {
         url: "/og-image.jpg",
         width: 800,
         height: 600,
-        alt: "Donut Factory",
+        alt: "Master Baker Studio",
       },
     ],
     locale: "en_US",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Donut Factory",
+    title: "Master Baker Studio",
     description: "Experience the taste from your eyes",
-    images: ["/og-image.jpg"],
+    images: ["/og_image_donuts_new.jpg"],
   },
   icons: {
     icon: "/donut_favicon.png",
