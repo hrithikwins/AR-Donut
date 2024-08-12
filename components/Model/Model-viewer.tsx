@@ -33,10 +33,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
           auto-rotate
           src={src}
           alt={alt}
-          camera-orbit="0deg 75deg -2m" // Adjust as necessary
-          min-camera-orbit="0deg 75deg 1m" // Set a minimum distance
-          max-camera-orbit="0deg 75deg 2m" // Allow more zoom-out
-          field-of-view="75deg"
+         
           style={{
             overflow: "hidden",
             width: "100%",
