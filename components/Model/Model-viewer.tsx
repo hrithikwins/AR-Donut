@@ -33,12 +33,15 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
           auto-rotate
           src={src}
           alt={alt}
+          camera-orbit="0deg 75deg -2m" // Adjust as necessary
+          min-camera-orbit="0deg 75deg 1m" // Set a minimum distance
+          max-camera-orbit="0deg 75deg 2m" // Allow more zoom-out
+          field-of-view="75deg"
           style={{
             overflow: "hidden",
             width: "100%",
-            height: "320px",  
+            height: "320px",
           }}
-          className="w-full translate-y-[-100px] scale-75 m-auto"
         >
           <div className="pt-2 pb-3 mt-[240px] block font-bold">{alt}</div>
           <button
