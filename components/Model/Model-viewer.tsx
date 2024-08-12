@@ -86,13 +86,13 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
         style={style}
         className="w-full m-auto"
       >
+      </model-viewer>
         <button
           className="bg-[#682715] border-[#B87764] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
           slot="ar-button"
         >
           VIEW IN AR <ARSvg />
         </button>
-      </model-viewer>
     </div>
   );
 };
