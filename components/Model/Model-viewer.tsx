@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Script from "next/script";
 
 interface ModelViewerProps {
@@ -19,13 +19,14 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
   ar = false,
   style,
 }) => {
+  const modelViewerRef = useRef<any>(null);
+
   useEffect(() => {
     const arButton = document.getElementById("ar-button");
-    if (arButton) {
+    if (arButton && modelViewerRef.current) {
       arButton.addEventListener("click", () => {
-        const modelViewer = document.querySelector("model-viewer");
-        if (modelViewer && ar) {
-          (modelViewer as any).activateAR();
+        if (modelViewerRef.current && ar) {
+          modelViewerRef.current.activateAR();
         }
       });
     }
@@ -46,6 +47,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
         src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
       ></Script>
       <model-viewer
+        ref={modelViewerRef}
         src={src}
         alt={alt}
         auto-rotate={autoRotate}
