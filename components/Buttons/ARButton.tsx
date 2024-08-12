@@ -49,6 +49,7 @@ interface ARButtonProps {
 const ARButton: React.FC<ARButtonProps> = ({ name }) => {
   return (
     <button
+      slot="ar-button"
       id="ar-button"
       className="bg-[#682715] border-[#B87764] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
     >
