@@ -29,6 +29,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
           'button[slot="ar-button"]'
         ) as HTMLButtonElement;
         if (arButton) {
+          console.log(arButton)
           arButton.click(); 
         }
       }
@@ -52,6 +53,8 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
           style={{
             overflow: "hidden",
             width: "100%",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
           }}
         >
           <button
