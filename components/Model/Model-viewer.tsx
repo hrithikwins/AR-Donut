@@ -20,7 +20,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
   style,
 }) => {
 
-    const modelViewerRef = useRef(null);
+     const modelViewerRef = useRef<HTMLElement>(null);
 
     const handleExternalARButtonClick = () => {
       if (modelViewerRef.current) {
