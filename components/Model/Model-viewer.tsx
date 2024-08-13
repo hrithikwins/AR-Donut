@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Script from "next/script";
 import ARSvg from "../SVGS/ARSvg";
 
@@ -19,6 +19,21 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
   ar = false,
   style,
 }) => {
+
+    const modelViewerRef = useRef(null);
+
+    const handleExternalARButtonClick = () => {
+      if (modelViewerRef.current) {
+        // Use querySelector on the element referenced by modelViewerRef
+        const arButton = modelViewerRef.current.querySelector(
+          'button[slot="ar-button"]'
+        ) as HTMLButtonElement;
+        if (arButton) {
+          arButton.click(); // Trigger the AR functionality by clicking the internal button
+        }
+      }
+    };
+
   return (
     <div className="w-full">
       <Script
@@ -27,27 +42,32 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
       ></Script>
       <div>
         <model-viewer
+          ref={modelViewerRef}
           ar
           camera-controls
           touch-action="pan-y"
           auto-rotate
           src={src}
           alt={alt}
-         
           style={{
             overflow: "hidden",
             width: "100%",
-            height: "320px",
           }}
         >
-          <div className="pt-2 pb-3 mt-[240px] block font-bold">{alt}</div>
           <button
-            className="bg-[#682715]  mt-[280px]  border-[#B87764] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
+            className="bg-[#682715] hidden    border-[#B87764] border   justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
             slot="ar-button"
           >
             VIEW IN AR <ARSvg />
           </button>
         </model-viewer>
+        <div className="pt-2 pb-3  block font-bold">{alt}</div>
+        <button
+          className="bg-[#682715]  border-[#B87764] border flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
+          onClick={handleExternalARButtonClick}
+        >
+          VIEW IN AR <ARSvg />
+        </button>
       </div>
     </div>
   );

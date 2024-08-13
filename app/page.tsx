@@ -55,9 +55,7 @@ const DonutCard = React.memo(({ item }: any) => {
       <div className="absolute mx-2 my-2 ">
         <VegSVG />
       </div>
-      <div className="h-[320px]">
-        <ModelViewer src={item.image} alt={item.name} />
-      </div>
+      <ModelViewer src={item.image} alt={item.name} />
       <hr className="w-full mt-4 text-[#B87764] bg-[#B87764] border-[#B87764]" />
     </div>
   );

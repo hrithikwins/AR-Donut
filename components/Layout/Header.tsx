@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <div className="bg-[#FFD9CE]">
       <div className="flex  absolute w-full px-3 py-1 justify-between items-center">
-        <Image src={"/master-baker.svg"} width={150} height={200} alt="" />
+        <Image src={"/master-baker.svg"} className="" width={150} height={200} alt="" />
         <button
           onClick={shareContent}
           className="bg-[#FFDE11]  cursor-pointer  rounded-full p-2"

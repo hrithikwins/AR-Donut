@@ -1,7 +1,7 @@
 [
   {
     "image": "/glbs/coffee/coffee chocolate vermicheli.glb",
-    "name": "Soupless Coffee Chocolate Vermicheli"
+    "name": "Soupless Coffee Chocolate Vermicelli"
   },
   {
     "image": "/glbs/coffee/coffee dark curls.glb",
@@ -13,7 +13,7 @@
   },
   {
     "image": "/glbs/coffee/coffee rainbow vermicheli.glb",
-    "name": "Soupless Coffee Rainbow Vermicheli"
+    "name": "Soupless Coffee Rainbow Vermicelli"
   },
   {
     "image": "/glbs/coffee/coffee strawberry curls.glb",
@@ -21,11 +21,11 @@
   },
   {
     "image": "/glbs/coffee/coffee two in one curls.glb",
-    "name": "Soupless Coffee Two In One Curls"
+    "name": "Soupless Coffee ⁠curls duo"
   },
   {
     "image": "/glbs/coffee/coffee white vermicheli.glb",
-    "name": "Soupless Coffee White Vermicheli"
+    "name": "Soupless Coffee White Vermicelli"
   },
   {
     "image": "/glbs/dark/dark chocolate curls.glb",
@@ -33,11 +33,11 @@
   },
   {
     "image": "/glbs/dark/dark chocolate vermicheli.glb",
-    "name": "Soupless Dark Chocolate Vermicheli"
+    "name": "Soupless Dark Chocolate Vermicelli"
   },
   {
     "image": "/glbs/dark/dark rainbow vermicheli.glb",
-    "name": "Soupless Dark Rainbow Vermicheli"
+    "name": "Soupless Dark Rainbow Vermicelli"
   },
   {
     "image": "/glbs/dark/dark red and white.glb",
@@ -49,15 +49,15 @@
   },
   {
     "image": "/glbs/dark/dark two in one curls.glb",
-    "name": "Soupless Dark Two In One Curls"
+    "name": "Soupless Dark ⁠curls duo"
   },
   {
     "image": "/glbs/dark/dark white vermicheli.glb",
-    "name": "Soupless Dark White Vermicheli"
+    "name": "Soupless Dark White Vermicelli"
   },
   {
     "image": "/glbs/pistachio/pistachio chocolate vermicheli.glb",
-    "name": "Soupless Pistachio Chocolate Vermicheli"
+    "name": "Soupless Pistachio Chocolate Vermicelli"
   },
   {
     "image": "/glbs/pistachio/pistachio dark curls.glb",
@@ -65,7 +65,7 @@
   },
   {
     "image": "/glbs/pistachio/pistachio Rainbow vermicheli.glb",
-    "name": "Soupless Pistachio Rainbow Vermicheli"
+    "name": "Soupless Pistachio Rainbow Vermicelli"
   },
   {
     "image": "/glbs/pistachio/pistachio strawberry curls.glb",
@@ -73,15 +73,15 @@
   },
   {
     "image": "/glbs/pistachio/pistachio two in one curls.glb",
-    "name": "Soupless Pistachio Two In One Curls"
+    "name": "Soupless Pistachio ⁠curls duo"
   },
   {
     "image": "/glbs/pistachio/pistachio white vermicheli.glb",
-    "name": "Soupless Pistachio White Vermicheli"
+    "name": "Soupless Pistachio White Vermicelli"
   },
   {
     "image": "/glbs/light/light chocolate vermicheli.glb",
-    "name": "Soupless Light Chocolate Vermicheli"
+    "name": "Soupless Light Chocolate Vermicelli"
   },
   {
     "image": "/glbs/light/light dark curls.glb",
@@ -89,19 +89,19 @@
   },
   {
     "image": "/glbs/light/light rainbow vermicheli.glb",
-    "name": "Soupless Light Rainbow Vermicheli"
+    "name": "Soupless Light Rainbow Vermicelli"
   },
   {
     "image": "/glbs/light/light two in one curls.glb",
-    "name": "Soupless Light Two In One Curls"
+    "name": "Soupless Light ⁠curls duo"
   },
   {
     "image": "/glbs/light/light white vermicheli.glb",
-    "name": "Soupless Light White Vermicheli"
+    "name": "Soupless Light White Vermicelli"
   },
   {
     "image": "/glbs/strawberry/strawberry chocolate vermicheli.glb",
-    "name": "Soupless Strawberry Chocolate Vermicheli"
+    "name": "Soupless Strawberry Chocolate Vermicelli"
   },
   {
     "image": "/glbs/strawberry/strawberry dark curls.glb",
@@ -109,19 +109,19 @@
   },
   {
     "image": "/glbs/strawberry/strawberry Rainbow vermicheli.glb",
-    "name": "Soupless Strawberry Rainbow Vermicheli"
+    "name": "Soupless Strawberry Rainbow Vermicelli"
   },
   {
     "image": "/glbs/strawberry/strawberry two in one curls.glb",
-    "name": "Soupless Strawberry Two In One Curls"
+    "name": "Soupless Strawberry ⁠curls duo"
   },
   {
     "image": "/glbs/strawberry/strawberry white vermicheli.glb",
-    "name": "Soupless Strawberry White Vermicheli"
+    "name": "Soupless Strawberry White Vermicelli"
   },
   {
     "image": "/glbs/white/white chocolate vermicheli.glb",
-    "name": "Soupless White Chocolate Vermicheli"
+    "name": "Soupless White Chocolate Vermicelli"
   },
   {
     "image": "/glbs/white/white dark curls.glb",
@@ -129,7 +129,7 @@
   },
   {
     "image": "/glbs/white/white rainbow vermicheli.glb",
-    "name": "Soupless White Rainbow Vermicheli"
+    "name": "Soupless White Rainbow Vermicelli"
   },
   {
     "image": "/glbs/white/white strawberry curls.glb",
@@ -137,7 +137,7 @@
   },
   {
     "image": "/glbs/white/white two in one curls.glb",
-    "name": "Soupless White Two In One Curls"
+    "name": "Soupless White ⁠curls duo"
   },
   {
     "image": "/glbs/extras/pyramid.glb",
@@ -146,5 +146,21 @@
   {
     "image": "/glbs/extras/Sugar Donut.glb",
     "name": "Sugar Donut"
+  },
+  {
+    "image": "/glbs/extras/Plain dounut mini.glb",
+    "name": "Plain Donut Mini"
+  },
+  {
+    "image": "/glbs/extras/Plain dounut big.glb",
+    "name": "Plain Donut Big"
+  },
+  {
+    "image": "/glbs/extras/box of two.glb",
+    "name": "Box Of Two"
+  },
+  {
+    "image": "/glbs/extras/box of 4.glb",
+    "name": "Box Of Four"
   }
 ]
