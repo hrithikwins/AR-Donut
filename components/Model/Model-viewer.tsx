@@ -29,7 +29,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
           'button[slot="ar-button"]'
         ) as HTMLButtonElement;
         if (arButton) {
-          arButton.click(); // Trigger the AR functionality by clicking the internal button
+          arButton.click(); 
         }
       }
     };
