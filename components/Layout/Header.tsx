@@ -52,7 +52,6 @@ const Header = () => {
           <ShareSvg />
         </button>
       </div>
-
       <Image
         className="w-full"
         priority
