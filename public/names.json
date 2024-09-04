@@ -120,7 +120,7 @@
     "name": "Soupless Strawberry White Vermicelli"
   },
   {
-    "image": "/glbs/white/white/white chocolate vermicheli.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/white_chocolate_vermicheli.glb",
     "name": "Soupless White Chocolate Vermicelli"
   },
   {
@@ -128,7 +128,7 @@
     "name": "Soupless White Dark Curls"
   },
   {
-    "image": "/glbs/white/white/white rainbow vermicheli.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/white_rainbow_vermicheli.glb",
     "name": "Soupless White Rainbow Vermicelli"
   },
   {
