@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ARButton from "@/components/Buttons/ARButton";
 import Layout from "@/components/Layout/Layout";
 import { motion } from "framer-motion";
@@ -66,6 +66,9 @@ DonutCard.displayName = "DonutCard";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(9);
+
   useEffect(() => {
     registerServiceWorker();
   }, []);
@@ -81,28 +84,42 @@ export default function Home() {
     setIsLoading(false);
   };
 
+  const displayDonuts = () => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = currentPage * itemsPerPage;
+    return Donuts.slice(startIndex, endIndex).map((item, index) => (
+      <motion.div
+        key={index}
+        initial={{ x: `${index % 2 ? "100vw" : "-100vw"}` }}
+        animate={{ x: 0 }}
+        transition={{
+          yoyo: Infinity,
+          duration: 0.5,
+          delay: 0.7 + index * 0.3,
+        }}
+      >
+        <DonutCard item={item} />
+      </motion.div>
+    ));
+  };
+
   return (
     <main>
       {isLoading ? (
         <SplashScreen onAnimationComplete={handleAnimationComplete} />
       ) : (
         <Layout>
-          <motion.div className="py-5 bg-white grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {Donuts.map((item: any, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ x: `${index % 2 ? "100vw" : "-100vw"}` }}
-                animate={{ x: 0 }}
-                transition={{
-                  yoyo: Infinity,
-                  duration: 0.5,
-                  delay: 0.7 + index * 0.3,
-                }}
-              >
-                <DonutCard item={item} />
-              </motion.div>
-            ))}
-          </motion.div>
+          <motion.div className="py-5  bg-white grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">{displayDonuts()}</motion.div>
+          {/* Add pagination controls */}
+          <div className="flex justify-center bg-[##ffd9ce] mt-4 mb-4">
+            <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1} className="bg-[#ffd9ce] hover:bg-[#dda9ae] w-[80px]  disabled:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded">
+              Prev
+            </button>
+            <span className="mx-2 my-auto ">Page {currentPage}</span>
+            <button onClick={() => setCurrentPage(currentPage + 1)} disabled={Donuts.length <= currentPage * itemsPerPage} className="bg-[#ffd9ce] disabled:bg-gray-200 hover:bg-[#dda9ae] w-[80px] text-gray-800 font-bold py-2 px-4 rounded">
+              Next
+            </button>
+          </div>
         </Layout>
       )}
     </main>
