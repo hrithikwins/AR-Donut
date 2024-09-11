@@ -108,7 +108,7 @@
     "name": "Soupless Strawberry Dark Curls"
   },
   {
-    "image": "https://ar-objects.s3.amazonaws.com/strawberry_Rainbow_vermicheli.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/strawberry_rainbow_vermicheli.glb",
     "name": "Soupless Strawberry Rainbow Vermicelli"
   },
   {
@@ -144,23 +144,23 @@
     "name": "Pyramid Donut"
   },
   {
-    "image": "https://ar-objects.s3.amazonaws.com/Sugar_Dounut.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/sugar_dounut.glb",
     "name": "Sugar Donut"
   },
   {
-    "image": "https://ar-objects.s3.amazonaws.com/Plain_donut_mini.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/plain_donut_mini.glb",
     "name": "Plain Donut Mini"
   },
   {
-    "image": "https://ar-objects.s3.amazonaws.com/Plain dounut big.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/plain_dounut_big.glb",
     "name": "Plain Donut Big"
   },
   {
-    "image": "https://ar-objects.s3.amazonaws.com/box of two.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/box_of_two.glb",
     "name": "Box Of Two"
   },
   {
-    "image": "https://ar-objects.s3.amazonaws.com/box of 4.glb",
+    "image": "https://ar-objects.s3.amazonaws.com/box_of_4.glb",
     "name": "Box Of Four"
   }
 ]
