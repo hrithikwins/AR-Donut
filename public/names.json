@@ -1,5 +1,9 @@
 [
   {
+    "image": "https://ar-objects.s3.amazonaws.com/pack_of_6.glb",
+    "name": "Box Of Six"
+  },
+  {
     "image": "https://ar-objects.s3.amazonaws.com/coffee_chocolate_vermicheli.glb",
     "name": "Soupless Coffee Chocolate Vermicelli"
   },
