@@ -27,7 +27,7 @@ const shareContent = async () => {
   if (navigator.share) {
     try {
       await navigator.share({
-        title: "Master Baker Studio!",
+        title: "Phoenix Foods!",
         text: "Hey I found donuts for you!",
         url: window.location.href, // Share the current page URL
         files: [file], // Include the image file
@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <div className="bg-[#FFD9CE] max-h-40">
       <div className="flex  absolute w-full px-3 py-1 justify-between items-center">
-        <Image src={"/master-baker.svg"} className="" width={150} height={200} alt="" />
+        <Image src={"/phoenix-foods.png"} className="" width={150} height={200} alt="" />
         <button
           onClick={shareContent}
           className="bg-[#FFDE11]  cursor-pointer  rounded-full p-2"

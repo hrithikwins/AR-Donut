@@ -34,7 +34,7 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
           animate={{ scale: 0.5 }}
           transition={{ yoyo: Infinity, duration: 2, delay: 0.5 }}
         >
-          Master Baker <br /> Studio
+          Phoenix Foods <br />
         </motion.h1>
         <div></div>
       </div>
