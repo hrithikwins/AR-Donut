@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Phoenix Foods",
     description: "Experience the taste from your eyes",
-    images: ["/og_image_donuts_new.jpg"],
+    images: ["/og_image.png"],
   },
   icons: {
     icon: "/donut_favicon.png",
