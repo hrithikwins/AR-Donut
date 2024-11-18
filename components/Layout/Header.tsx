@@ -21,7 +21,7 @@ const ShareSvg = () => {
   );
 };
 const shareContent = async () => {
-  const imageFile = await fetch("/og-image.jpg").then((res) => res.blob()); // Replace with your image URL
+  const imageFile = await fetch("/og_image.png").then((res) => res.blob()); // Replace with your image URL
   const file = new File([imageFile], "image.jpg", { type: "image/jpeg" }); // Create a File object
 
   if (navigator.share) {

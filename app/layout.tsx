@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Phoenix Foods",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og_image.png",
         width: 800,
         height: 600,
         alt: "Phoenix Foods",
