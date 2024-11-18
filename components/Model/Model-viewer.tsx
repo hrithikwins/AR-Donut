@@ -30,7 +30,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
         ) as HTMLButtonElement;
         if (arButton) {
           console.log(arButton)
-          arButton.click(); 
+          arButton.click();
         }
       }
     };
@@ -58,7 +58,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
           }}
         >
           <button
-            className="bg-[#682715] hidden    border-[#B87764] border   justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
+            className="bg-[#c32424] hidden    border-[#252580] border   justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
             slot="ar-button"
           >
             VIEW IN AR <ARSvg />
@@ -66,7 +66,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
         </model-viewer>
         <div className="pt-2 pb-3  block font-bold">{alt}</div>
         <button
-          className="bg-[#682715]  border-[#B87764] border flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
+          className="bg-[#c32424]  border-[#252580] border flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
           onClick={handleExternalARButtonClick}
         >
           VIEW IN AR <ARSvg />

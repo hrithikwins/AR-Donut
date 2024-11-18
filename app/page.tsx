@@ -56,7 +56,7 @@ const DonutCard = React.memo(({ item }: any) => {
         <VegSVG />
       </div>
       <ModelViewer src={item.image} alt={item.name} />
-      <hr className="w-full mt-4 text-[#B87764] bg-[#B87764] border-[#B87764]" />
+      <hr className="w-full mt-4 text-[#252580] bg-[#252580] border-[#252580]" />
     </div>
   );
 });
@@ -111,12 +111,12 @@ export default function Home() {
         <Layout>
           <motion.div className="py-5  bg-white grid grid-flow-row grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">{displayDonuts()}</motion.div>
           {/* Add pagination controls */}
-          <div className="flex justify-center bg-[##ffd9ce] mt-4 mb-4">
-            <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1} className="bg-[#ffd9ce] hover:bg-[#dda9ae] w-[80px]  disabled:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded">
+          <div className="flex justify-center bg-[#252580] mt-4 mb-4">
+            <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1} className="bg-[#252580] hover:bg-[#dda9ae] w-[80px]  disabled:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded">
               Prev
             </button>
             <span className="mx-2 my-auto ">Page {currentPage}</span>
-            <button onClick={() => setCurrentPage(currentPage + 1)} disabled={Donuts.length <= currentPage * itemsPerPage} className="bg-[#ffd9ce] disabled:bg-gray-200 hover:bg-[#dda9ae] w-[80px] text-gray-800 font-bold py-2 px-4 rounded">
+            <button onClick={() => setCurrentPage(currentPage + 1)} disabled={Donuts.length <= currentPage * itemsPerPage} className="bg-[#252580] disabled:bg-gray-200 hover:bg-[#dda9ae] w-[80px] text-gray-800 font-bold py-2 px-4 rounded">
               Next
             </button>
           </div>

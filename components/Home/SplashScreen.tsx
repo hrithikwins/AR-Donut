@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 const splashScreenVariants = {
-  visible: { scale: 1, backgroundColor: "#FFD9CE", opacity: 1 },
-  hidden: { scale: 1.5, backgroundColor: "#682715",  opacity: 0.1 },
+  visible: { scale: 1, backgroundColor: "#252580", opacity: 1 },
+  hidden: { scale: 1.5, backgroundColor: "#c32424",  opacity: 0.1 },
 };
 
 const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
@@ -11,7 +11,7 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
 }) => {
   return (
     <motion.div
-      className="flex justify-center  h-screen bg-[#FFD9CE]"
+      className="flex justify-center  h-screen bg-[#252580]"
       initial="visible"
       animate="hidden"
       variants={splashScreenVariants}
@@ -29,7 +29,7 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
         />
         <div></div>
         <motion.h1
-          className="text-[#682715] text-center text-4xl font-bold"
+          className="text-[#c32424] text-center text-4xl font-bold"
           initial={{ scale: 1 }}
           animate={{ scale: 0.5 }}
           transition={{ yoyo: Infinity, duration: 2, delay: 0.5 }}
