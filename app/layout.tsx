@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Phoenix Foods",
     description: "Experience the taste from your eyes",
-    url: "https://ar-donut.vercel.app/",
+    url: "https://phoenixfoods.vercel.app/",
     siteName: "Phoenix Foods",
     images: [
       {
