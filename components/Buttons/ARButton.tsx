@@ -51,7 +51,7 @@ const ARButton: React.FC<ARButtonProps> = ({ name }) => {
     <button
       // slot="ar-button"
       // id="ar-button"
-      className="bg-[#c32424] border-[#252580] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
+      className="bg-[#252580] border-[#252580] border  flex justify-center gap-2 items-center py-2 rounded-[8px] w-full text-white font-semibold"
     >
       VIEW IN AR <ARSvg />
     </button>
