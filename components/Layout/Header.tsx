@@ -42,9 +42,12 @@ const shareContent = async () => {
 };
 const Header = () => {
   return (
-    <div className="bg-[#252580] max-h-40">
+    <div className="bg-[#c32424] max-h-40">
       <div className="flex  absolute w-full px-3 py-1 justify-between items-center">
-        <Image src={"/phoenix-foods.png"} className="" width={150} height={200} alt="" />
+        <div className="w-full flex justify-center">
+
+        <Image src={"/phoenix-foods-color.png"} className="" width={250} height={400} alt="" />
+        </div>
         <button
           onClick={shareContent}
           className="bg-[#FFDE11]  cursor-pointer  rounded-full p-2"
