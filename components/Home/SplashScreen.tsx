@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 const splashScreenVariants = {
-  visible: { scale: 1, backgroundColor: "#252580", opacity: 1 },
+  visible: { scale: 1, backgroundColor: "#c32424", opacity: 1 },
   hidden: { scale: 1.5, backgroundColor: "#c32424",  opacity: 0.5 },
 };
 
@@ -35,7 +35,7 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
           transition={{ yoyo: Infinity, duration: 2, delay: 0.5 }}
         >
           <Image
-          src="/phoenix-foods.png"
+          src="/phoenix-foods-color.png"
           height={300}
           width={300}
           alt="Phoenix Foods"
