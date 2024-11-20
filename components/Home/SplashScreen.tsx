@@ -34,7 +34,13 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
           animate={{ scale: 0.5 }}
           transition={{ yoyo: Infinity, duration: 2, delay: 0.5 }}
         >
-          Phoenix Foods <br />
+          <Image
+          src="/phoenix-foods.png"
+          height={300}
+          width={300}
+          alt="Phoenix Foods"
+          />
+           <br />
         </motion.h1>
         <div></div>
       </div>
