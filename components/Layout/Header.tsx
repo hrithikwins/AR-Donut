@@ -52,14 +52,15 @@ const Header = () => {
           <ShareSvg />
         </button>
       </div>
-      <Image
+      <div className="h-[400px]"></div>
+      {/* <Image
         className="w-full"
         priority
         src={"/chocolate-drop.svg"}
         alt=""
         width={400}
         height={400}
-      />
+      /> */}
     </div>
   );
 };

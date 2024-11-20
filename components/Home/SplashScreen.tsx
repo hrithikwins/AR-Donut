@@ -19,14 +19,14 @@ const SplashScreen: React.FC<{ onAnimationComplete: () => void }> = ({
       onAnimationComplete={onAnimationComplete}
     >
       <div className="flex flex-col items-center h-screen justify-between">
-        <Image
+        {/* <Image
           className="w-full absolute"
           src={"/chocolate-drop.svg"}
           alt=""
           priority
           width={400}
           height={400}
-        />
+        /> */}
         <div></div>
         <motion.h1
           className="text-[#c32424] text-center text-4xl font-bold"
